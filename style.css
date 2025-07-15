@@ -1,0 +1,64 @@
+/* Remove margens e deixa fundo escuro */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+/* Estiliza o canvas que desenha a cena 3D */
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Área dos botões de controle de luz */
+#btns-luzes {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+}
+
+/* Botões */
+button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  border: 2px solid rgb(48, 24, 170);
+  border-radius: 9px;
+}
+
+button:hover {
+  background-color: #5f5d5d;
+  border: 2px solid rgb(18, 131, 37);
+}
+
+/* Rótulos de estado das luzes */
+.estado-luz {
+  margin-left: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+.estado-luz.desligada {
+  color: red;
+}
+
+.titulo{
+    background-size: 50px;
+    color: rgb(27, 102, 168);
+    font-size: 50px;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
